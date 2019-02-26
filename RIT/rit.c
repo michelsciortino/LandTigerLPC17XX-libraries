@@ -7,9 +7,9 @@
 
 void RIT_IRQHandler(void)
 {
-	//Buttons_Debouncing_Handler(); // Buttons debouncing
-  //Joystick_HANDLER();						// joystick management
-	//adc_start_conversion();				// ADC management
+	//Buttons_Debouncing_Handler();			// Buttons debouncing
+  	//Joystick_HANDLER();				// joystick management
+	//adc_start_conversion();			// ADC management
 	LPC_RIT->RICTRL |= 0x1;				// clear interrupt flag
 	return;
 }
