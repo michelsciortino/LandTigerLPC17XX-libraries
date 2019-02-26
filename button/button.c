@@ -41,7 +41,7 @@ void Buttons_Debouncing_Handler()
     {
       int0_counter++;
 			switch(int0_counter){
-				case 2:
+				case 2: //code here
 					break;
 				default: break;
       }
@@ -60,7 +60,8 @@ void Buttons_Debouncing_Handler()
       key1_counter++;
       switch(key1_counter)
       {
-				case 2: break;
+				case 2: //code here
+					break;
 				default: break;
       }
     }
@@ -78,7 +79,8 @@ void Buttons_Debouncing_Handler()
       key2_counter++;
       switch(key2_counter)
       {
-        case 2: break;
+        			case 2: //code here
+					break;
 				default: break;
       }
     }
