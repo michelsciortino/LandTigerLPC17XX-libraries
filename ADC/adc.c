@@ -33,8 +33,8 @@ void ADC_IRQHandler(void) {
 	// ad_current : AD_max = x : 7 	led_on((AD_current*7/0xFFF));
 	if(_adc_state == ON){
       		//insert here what to do when the adc changes value
-    }		
-		AD_last = AD_current;
+    	}		
+	AD_last = AD_current;
   }
 }
 
