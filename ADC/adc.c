@@ -29,11 +29,10 @@ void ADC_IRQHandler(void) {
   AD_current = ((LPC_ADC->ADGDR>>4) & 0xFFF);	// Read Conversion Result
 	
   if(AD_current != AD_last){ 		//If the adc input has changed
-		// ad_last : AD_max = x : 7 			led_off((AD_last*7/0xFFF));	
-	  // ad_current : AD_max = x : 7 		led_on((AD_current*7/0xFFF));
-
-		if(_adc_state == ON){
-      //insert here what to do when the adc changes value
+	// ad_last : AD_max = x : 7 	led_off((AD_last*7/0xFFF));	
+	// ad_current : AD_max = x : 7 	led_on((AD_current*7/0xFFF));
+	if(_adc_state == ON){
+      		//insert here what to do when the adc changes value
     }		
 		AD_last = AD_current;
   }
